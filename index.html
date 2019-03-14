@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let email_1 = "a@gmail.com", email_2 = "abc@hotmail.com" ;
+    let email_3 = "@gmail.com", email_4 = "@#abc@gmail.com";
+
+    function validate_email(email) {
+        let regex = /^[a-zA-Z0-9]+[a-zA-Z0-9]*@[a-zA-Z0-9]+(\.[a-zA-Z0-9]+)$/;
+        return regex.test(email);
+    }
+    console.log(validate_email(email_1));
+    console.log(validate_email(email_3));
+</script>
+</body>
+</html>
